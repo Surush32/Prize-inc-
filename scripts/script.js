@@ -33,8 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-function toggleMenu() {
-  const menu = document.querySelector('.nav ul');
-  menu.classList.toggle('active');
-}
+
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.nav ul').classList.toggle('active');
+  });
 

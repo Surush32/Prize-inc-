@@ -71,53 +71,63 @@
 
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
-    /* Stack the About Section elements vertically */
-    .about {
-        padding: 30px 20px;
-        flex-direction: column;
-        height: auto;
-        /* Allow the about section to adapt to content height */
-    }
+  /* Stack the About Section elements vertically */
+  .about {
+      padding: 40px;
+      flex-direction: column;
+      height: auto;
+      /* Allow the about section to adapt to content height */
+  }
 
-    /* Adjust About Container to fit vertically */
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+  /* Adjust About Container to fit vertically */
+  .about-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
 
-    /* Adjust the About Image and Text section layout */
-    .about-image,
-    .about-text {
-        flex: none;
-        width: 100%;
-        padding: 20px;
-    }
+  /* Adjust the About Image and Text section layout */
+  .about-image,
+  .about-text {
+      flex: none;
+      width: 100%;
+      padding: 20px;
+  }
 
-    /* Adjust the image size */
-    .about-image img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 10px;
-        /* Slightly rounded corners for smaller screens */
-    }
+  /* Adjust the image size */
+  .about-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      /* Slightly rounded corners for smaller screens */
+  }
 
-    /* Adjust text sizes */
-    .about-text h2 {
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-    }
+  /* Adjust text sizes */
+  .about-text h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+  }
 
-    .about-text p {
-        font-size: 1rem;
-        margin-bottom: 15px;
-    }
+  .about-text p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+  }
 
-    /* Adjust button styling */
-    .about-text .btn {
-        padding: 10px 20px;
-        font-size: 1rem;
-        /* Adjust button size for smaller screens */
-    }
+  /* Adjust button styling */
+  .about-text .btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      /* Adjust button size for smaller screens */
+  }
+
+  /* Adjust the order for text first, then image */
+  .about-image {
+      order: 2; /* Make the image come after the text */
+      padding-top: 20px; /* Add space between text and image */
+  }
+
+  .about-text {
+      order: 1; /* Keep the text first */
+  }
 }
