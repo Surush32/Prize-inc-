@@ -1,0 +1,123 @@
+
+/* Start of About Section */
+.about {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  height: 630px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.about-image,
+.about-text {
+  flex: 1;
+  padding: 40px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.about-text {
+  color: #333;
+  line-height: 1.8;
+}
+
+.about-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #004d40;
+  /* Consistent teal text */
+  font-weight: 600;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.about-text .btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #008080;
+  /* Teal background for the button */
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.about-text .btn:hover {
+  background-color: #20B2AA;
+  /* Slightly darker teal for hover */
+}
+
+/* End of About Section */
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    /* Stack the About Section elements vertically */
+    .about {
+        padding: 30px 20px;
+        flex-direction: column;
+        height: auto;
+        /* Allow the about section to adapt to content height */
+    }
+
+    /* Adjust About Container to fit vertically */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Adjust the About Image and Text section layout */
+    .about-image,
+    .about-text {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Adjust the image size */
+    .about-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        /* Slightly rounded corners for smaller screens */
+    }
+
+    /* Adjust text sizes */
+    .about-text h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    /* Adjust button styling */
+    .about-text .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        /* Adjust button size for smaller screens */
+    }
+}

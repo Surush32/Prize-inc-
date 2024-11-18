@@ -14,8 +14,6 @@ inputs.forEach((input) => {
   });
 });
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
   const serviceContainers = document.querySelectorAll('.services-container');
 
@@ -34,4 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
     observer.observe(container);
   });
 });
+
+function toggleMenu() {
+  const menu = document.querySelector('.nav ul');
+  menu.classList.toggle('active');
+}
 

@@ -1,0 +1,210 @@
+
+/* Services section styling */
+.services {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 3rem !important;
+  }
+  
+  .P1 {
+    font-weight: 16px;
+    color: rgb(141, 142, 146);
+    border: 1px solid #C7DCFB;
+    padding: 4px 24px;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 50rem;
+    margin-bottom: 18px;
+    font-weight: 400;
+  }
+  
+  .H1 {
+    font-size: calc(1.375rem + 1.5vw);
+    color: #004d40;
+  }
+  
+  .services-container {
+    background-color: rgb(239, 252, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 48px 48px;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 5px;
+    opacity: 0;
+    /* Initial state for animation */
+    transform: translateY(100px);
+    /* Initial state for sliding */
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  
+  .services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    /* Adds space between the cards */
+  }
+  
+  .P2 {
+    color: rgb(141, 142, 146);
+    font-size: 20px;
+    border: none;
+    padding: 10px 5px;
+    font-size: medium !important;
+  }
+  
+  .i2 {
+    border: 1px #ffff solid;
+    background-color: rgb(255, 255, 255);
+    color: #008080;
+    padding: 20px;
+    border-radius: 40px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    margin-right: 220px;
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: calc(1.275rem + .3vw);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-right: 0px;
+  }
+  
+  .plus-icon {
+    background-color: rgb(255, 255, 255);
+    color: #008080;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1rem;
+    /* Adjust size */
+    margin-right: 250px;
+    position: relative;
+    /* To control position of the child element */
+    cursor: pointer;
+  }
+  
+  .learn-more {
+    font-size: 10px;
+    /* Adjusted font size */
+    color: #008080;
+    padding: 5px 10px;
+    /* Balanced padding */
+  
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    /* Light border to match the background */
+    display: inline-block;
+    opacity: 0;
+    /* Initially hidden */
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    /* Vertically center the text */
+    margin-left: 10px;
+    /* Space between the icon and the text */
+    white-space: nowrap;
+    /* Prevent the text from wrapping */
+    visibility: hidden;
+    /* Keep it out of view */
+    letter-spacing: 1px;
+    /* Increased space between letters */
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
+    /* Smooth transition for sliding effect */
+    text-transform: none;
+    /* Ensure text is not uppercased */
+  }
+  
+  .plus-icon:hover .learn-more {
+    opacity: 1;
+    /* Make it visible */
+    transform: translateX(10px) translateY(-50%);
+    /* Slide it to the right */
+    visibility: visible;
+    /* Make sure it's in the document flow */
+    transition: transform 1s ease, opacity 0.5s ease;
+    /* Smooth transition on hover */
+  }
+  
+  
+  /* Animation class to trigger when in view */
+  .services-container.animate {
+    opacity: 1;
+    /* Visible state */
+    transform: translateY(0);
+    /* Original position */
+  }
+  
+
+  /* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust services container for mobile */
+    .services-container {
+      width: 90%;  /* Smaller width for mobile */
+      height: auto;  /* Adjust height automatically */
+      padding: 24px;  /* Reduced padding for mobile but consistent on both sides */
+      margin: 0 auto;  /* Keep it centered */
+      opacity: 1;  /* Ensure the box is visible */
+      transform: none;  /* Reset sliding transformation */
+      /* Ensure animation works on mobile as well */
+      transition: opacity 0.6s, transform 0.6s;
+    }
+  
+    .services-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;  /* Maintain space between items */
+    }
+  
+    /* Keep the font size consistent but smaller for mobile */
+    .H1 {
+      font-size: calc(1.25rem + 1vw);  /* Slightly smaller font size on mobile */
+    }
+  
+    .P1 {
+      font-size: 14px;  /* Adjusted for mobile */
+      margin-bottom: 12px;
+    }
+  
+    .P2 {
+      font-size: 16px;  /* Adjust font size for mobile */
+    }
+  
+    /* Smaller plus icon and hover text on mobile */
+    .plus-icon {
+      font-size: 0.9rem;  /* Smaller plus icon */
+      padding: 8px;  /* Less padding for mobile */
+      margin-right: 0;  /* Remove large right margin */
+    }
+  
+    .learn-more {
+      font-size: 12px;  /* Adjust font size for mobile */
+      padding: 5px 8px;  /* Smaller padding */
+    }
+  
+    /* Optional: Further reduce the size of the service icon if necessary */
+    .i2 {
+      font-size: 1.3rem;  /* Smaller icon font size for mobile */
+      margin-right: 150px;  /* Adjust right margin for better spacing */
+    }
+  
+    /* Ensure the margin and padding of the service cards are balanced */
+    .services-container {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin: 0 16px;  /* Balanced margin for mobile */
+    }
+  }
+  
+
+
+
