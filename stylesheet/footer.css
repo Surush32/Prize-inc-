@@ -2,7 +2,7 @@
 .footer {
     background-color: #008080; /* Teal color for footer */
     color: white;
-    padding: 20px 40px;
+    padding: 5px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,17 +14,17 @@
     display: flex;
     justify-content: flex-start; /* Align items to the left */
     align-items: center;
-    gap: 20px; /* Space between logo and social icons */
+    gap: 320px; /* Space between logo and social icons */
   }
   
   .footer-logo h1 {
-    font-size: 2rem;
-    margin: 0;
+    font-size: 0.875rem;
+    margin-left: 90px;
   }
   
   .footer-social {
     display: flex;
-    gap: 15px; /* Space between the social icons */
+    gap: 30px; /* Space between the social icons */
   }
   
   .footer-social .social-icon {
