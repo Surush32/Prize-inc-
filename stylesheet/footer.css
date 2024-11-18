@@ -54,7 +54,7 @@
       flex-direction: column;  /* Stack items vertically on smaller screens */
       justify-content: center;
       text-align: center;
-      padding: 15px;
+      padding: 5px;
     }
   
     .footer-container {
@@ -63,11 +63,12 @@
     }
   
     .footer-logo h1 {
-      font-size: 1.5rem;
+      font-size: 1rem;
+      margin-right: 80px;
     }
   
     .footer-social {
-      gap: 10px;
+      gap: 20px;
     }
   
     .footer-social .social-icon {
