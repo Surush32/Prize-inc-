@@ -1,0 +1,81 @@
+/* Footer Styles */
+.footer {
+    background-color: #008080; /* Teal color for footer */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    gap: 20px; /* Space between logo and social icons */
+  }
+  
+  .footer-logo h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px; /* Space between the social icons */
+  }
+  
+  .footer-social .social-icon {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social .social-icon:hover {
+    color: #20B2AA; /* Lighter teal on hover */
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.875rem;
+  }
+  
+  /* Media Query for screens smaller than 768px (Mobile Phones) */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;  /* Stack items vertically on smaller screens */
+      justify-content: center;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .footer-container {
+      flex-direction: column; /* Stack the logo and social icons on smaller screens */
+      gap: 10px;
+    }
+  
+    .footer-logo h1 {
+      font-size: 1.5rem;
+    }
+  
+    .footer-social {
+      gap: 10px;
+    }
+  
+    .footer-social .social-icon {
+      font-size: 1.2rem;
+    }
+  
+    .footer-bottom p {
+      font-size: 0.875rem;
+    }
+  }
+  
