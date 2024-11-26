@@ -47,36 +47,62 @@
   .footer-bottom p {
     font-size: 0.875rem;
   }
-  
   /* Media Query for screens smaller than 768px (Mobile Phones) */
-  @media (max-width: 768px) {
-    .footer {
-      flex-direction: column;  /* Stack items vertically on smaller screens */
-      justify-content: center;
-      text-align: center;
-      padding: 5px;
-    }
-  
-    .footer-container {
-      flex-direction: column; /* Stack the logo and social icons on smaller screens */
-      gap: 10px;
-    }
-  
-    .footer-logo h1 {
-      font-size: 1rem;
-      margin-right: 80px;
-    }
-  
-    .footer-social {
-      gap: 20px;
-    }
-  
-    .footer-social .social-icon {
-      font-size: 1.2rem;
-    }
-  
-    .footer-bottom p {
-      font-size: 0.875rem;
-    }
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    text-align: center; /* Center align text and elements */
+    padding: 20px 10px; /* Add balanced padding */
+    background-color: #004d40; /* Optional: Add a background color for contrast */
+    color: #ffffff; /* Ensure text is readable */
   }
-  
+
+  .footer-container {
+    flex-direction: column; /* Stack the logo and social icons */
+    align-items: center; /* Center align everything */
+    gap: 15px; /* Add spacing between elements */
+    width: 100%; /* Ensure the container fits within the screen */
+    padding: 10px 0;
+  }
+
+  .footer-logo h1 {
+    font-size: 1.2rem; /* Make the logo text slightly larger */
+    margin: 0; /* Remove extra margin for a cleaner look */
+  }
+
+  .footer-social {
+    display: flex; /* Keep social icons inline */
+    justify-content: center; /* Center them */
+    gap: 15px; /* Add spacing between icons */
+  }
+
+  .footer-social .social-icon {
+    font-size: 1.5rem; /* Make icons more prominent */
+    color: #ffffff; /* Ensure icons match the footer theme */
+    transition: transform 0.3s ease; /* Add hover animation for interactivity */
+  }
+
+  .footer-social .social-icon:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+    color: #00bfa5; /* Optional: Add a hover color */
+  }
+
+  .footer-bottom {
+    margin-top: 20px; /* Add space above the bottom text */
+  }
+
+  .footer-bottom p {
+    font-size: 0.875rem; /* Adjust font size for readability */
+    color: #cfd8dc; /* Lighten the text color for contrast */
+  }
+
+  .footer-bottom a {
+    color: #00bfa5; /* Highlight links */
+    text-decoration: none; /* Remove underline */
+  }
+
+  .footer-bottom a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+}
