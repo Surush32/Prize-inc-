@@ -35,6 +35,7 @@
 .contact-left img {
   width: 600px;
   height: 500px;
+  border-radius: 40px;
 }
 
 form input,
@@ -131,6 +132,11 @@ h4 {
 }
 
 
+
+
+
+
+
 /* Media Query for screens smaller than 768px (applies to most phones) */
 @media (max-width: 768px) {
   /* Stack the Contact Form elements vertically */
@@ -184,4 +190,14 @@ h4 {
       height: auto; /* Maintain aspect ratio */
       border-radius: 10px; /* Add rounded corners */
   }
+  
+  .P3 {
+    font-size: 1.2rem; /* Slightly larger font size for visibility */
+    font-weight: bold; /* Make it stand out */
+    text-align: center; /* Center-align the text */
+    color: #008080; /* Teal color for consistency */
+    margin: 20px 0; /* Add space above and below */
+    line-height: 1.5; /* Better readability */
+  }
 }
+
