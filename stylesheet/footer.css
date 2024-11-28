@@ -1,108 +1,111 @@
 /* Footer Styles */
 .footer {
-    background-color: #008080; /* Teal color for footer */
-    color: white;
-    padding: 5px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin-top: 100px;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    align-items: center;
-    gap: 320px; /* Space between logo and social icons */
-  }
-  
-  .footer-logo h1 {
-    font-size: 0.875rem;
-    margin-left: 90px;
-  }
-  
-  .footer-social {
-    display: flex;
-    gap: 30px; /* Space between the social icons */
-  }
-  
-  .footer-social .social-icon {
-    font-size: 1.5rem;
-    color: white;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-social .social-icon:hover {
-    color: #20B2AA; /* Lighter teal on hover */
-  }
-  
-  .footer-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .footer-bottom p {
-    font-size: 0.875rem;
-  }
-  /* Media Query for screens smaller than 768px (Mobile Phones) */
+  background-color: #008080;
+  color: white;
+  padding: 5px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 320px;
+}
+
+.footer-logo h1 {
+  font-size: 0.875rem;
+  margin-left: 90px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-social .social-icon {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icon:hover {
+  color: #20B2AA;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.875rem;
+}
+
+
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     justify-content: center;
-    text-align: center; /* Center align text and elements */
-    padding: 20px 10px; /* Add balanced padding */
-    background-color: #004d40; /* Optional: Add a background color for contrast */
-    color: #ffffff; /* Ensure text is readable */
-  }
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #004d40;
+    color: #ffffff;
 
-  .footer-container {
-    flex-direction: column; /* Stack the logo and social icons */
-    align-items: center; /* Center align everything */
-    gap: 15px; /* Add spacing between elements */
-    width: 100%; /* Ensure the container fits within the screen */
-    padding: 10px 0;
-  }
 
-  .footer-logo h1 {
-    font-size: 1.2rem; /* Make the logo text slightly larger */
-    margin: 0; /* Remove extra margin for a cleaner look */
-  }
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+      padding: 10px 0;
+    }
 
-  .footer-social {
-    display: flex; /* Keep social icons inline */
-    justify-content: center; /* Center them */
-    gap: 15px; /* Add spacing between icons */
-  }
+    .footer-logo h1 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
 
-  .footer-social .social-icon {
-    font-size: 1.5rem; /* Make icons more prominent */
-    color: #ffffff; /* Ensure icons match the footer theme */
-    transition: transform 0.3s ease; /* Add hover animation for interactivity */
-  }
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
 
-  .footer-social .social-icon:hover {
-    transform: scale(1.2); /* Enlarge on hover */
-    color: #00bfa5; /* Optional: Add a hover color */
-  }
+    .footer-social .social-icon {
+      font-size: 1.5rem;
+      color: #ffffff;
+      transition: transform 0.3s ease;
+    }
 
-  .footer-bottom {
-    margin-top: 20px; /* Add space above the bottom text */
-  }
+    .footer-social .social-icon:hover {
+      transform: scale(1.2);
+      color: #00bfa5;
+    }
 
-  .footer-bottom p {
-    font-size: 0.875rem; /* Adjust font size for readability */
-    color: #cfd8dc; /* Lighten the text color for contrast */
-  }
+    .footer-bottom {
+      margin-top: 20px;
+    }
 
-  .footer-bottom a {
-    color: #00bfa5; /* Highlight links */
-    text-decoration: none; /* Remove underline */
-  }
+    .footer-bottom p {
+      font-size: 0.875rem;
+      color: #cfd8dc;
+    }
 
-  .footer-bottom a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    .footer-bottom a {
+      color: #00bfa5;
+      text-decoration: none;
+    }
+
+    .footer-bottom a:hover {
+      text-decoration: underline;
+    }
+
   }
 }
