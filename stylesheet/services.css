@@ -74,15 +74,22 @@ h4 {
 }
 
 .plus-icon {
+  font-size: 0.9rem;
+  padding: 8px;
+  position: relative;
+  margin-right: 0;
   background-color: rgb(255, 255, 255);
   color: #008080;
-  padding: 10px;
   border-radius: 50%;
-  font-size: 1rem;
-  margin-right: 250px;
-  position: relative;
   cursor: pointer;
+  z-index: 10; /* Ensure it's above other elements */
+  width: 20px; /* Ensure touch target size is sufficient */
+  height: 20px; /* Ensure touch target size is sufficient */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .learn-more {
   font-size: 10px;

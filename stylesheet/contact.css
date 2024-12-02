@@ -134,9 +134,9 @@ img {
 
   .contact-left {
     width: 90%;  /* Same width as specified */
-    margin-left: 0;
-    height: auto;
+    height: 340px;
     padding: 15px;
+    margin-left: 10px;
   }
 
   .contact-right {
@@ -180,13 +180,12 @@ img {
     width: 370px;  /* Image width as per your request */
     height: 250px;  /* Image height as per your request */
     border-radius: 30px;
-    margin-top: 10px;
-    margin-bottom: 0;
   }
 
   /* Slightly smaller padding and text for ultra-small screens */
   .contact-left, .contact-right {
     padding: 10px;
+
   }
 
   .P3 {
@@ -205,12 +204,14 @@ img {
   .contact-left img {
     width: 100%;  /* Ensure image fits within the screen */
     height: auto;
+    margin-bottom: 0;
   }
 
   img{
-    width: 100%;  /* Image width as per your request */
-    height: 250px;  /* Image height as per your request */
-    border-radius: 5px;
+    width: 300px;  /* Image width as per your request */  /* Image height as per your request */
+    border-radius: 30px;
+    height: 200px;
+    margin-top: 0px;  /* Ensure it maintains aspect ratio */
   }
 
   .contact-left, .contact-right {
