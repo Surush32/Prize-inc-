@@ -127,6 +127,7 @@ h4 {
 }
 
 
+
 @media (max-width: 768px) {
   .services-container {
     width: 90%;
@@ -170,6 +171,7 @@ h4 {
     color: #008080;
     border-radius: 50%;
     cursor: pointer;
+    display: none; /* Hide the plus icon */
   }
 
   .learn-more {
