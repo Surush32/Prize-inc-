@@ -5,6 +5,7 @@
   margin-top: 140px;
   gap: 20px;
   padding: 20px;
+  margin-bottom: 10px;
 }
 
 .contact-left {
@@ -87,39 +88,30 @@ article {
   margin-top: 30px;
 }
 
-
 img {
   border-radius: 20px;
+  
 }
 
-
-
-/* Default (larger screens, above 768px) */
 .Contact-form {
   display: flex;
-  flex-direction: row;  /* Row layout for larger screens */
-  gap: 20px;  /* Space between image and form */
+  flex-direction: row;
+  gap: 20px;
 }
 
 .contact-left {
-  width: 45%;  /* Slightly smaller width on larger screens */
+  width: 500px;
   padding: 20px;
 }
 
 .contact-right {
-  width: 50%;  /* Slightly smaller width on larger screens */
+  width: 500px;
   padding: 20px;
 }
 
-.contact-left img {
-  width: 100%;  /* Image takes full width */
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
 
 .P3 {
-  font-size: 1.4rem;  /* Larger font size for larger screens */
+  font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
   color: #008080;
@@ -185,9 +177,11 @@ img {
   }
 
   img{
-    width: 310px;  /* Image width as per your request */
+    width: 370px;  /* Image width as per your request */
     height: 250px;  /* Image height as per your request */
-    border-radius: 5px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   /* Slightly smaller padding and text for ultra-small screens */
@@ -214,7 +208,7 @@ img {
   }
 
   img{
-    width: 310px;  /* Image width as per your request */
+    width: 100%;  /* Image width as per your request */
     height: 250px;  /* Image height as per your request */
     border-radius: 5px;
   }

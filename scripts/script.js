@@ -39,3 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.nav ul').classList.toggle('active');
   });
 
+  document.querySelectorAll('.btn2').forEach(btn => {
+    btn.addEventListener('click', event => {
+        event.preventDefault(); // Stops the link from being clickable
+    });
+});
